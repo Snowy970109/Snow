@@ -1,0 +1,53 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  padding: 10px;
+  height: 100vh;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background colors for each grid item */
+.item1 {
+  grid-area: header;
+  background-color: #91c3fc; /* Red */
+  height: 100vh;
+}
+
+.item2 {
+  grid-area: menu;
+  background-color: #4787d1; /* Purple */
+}
+
+.item3 {
+  grid-area: main;
+  background-color: #d3597e; /* Green */
+}
+
+.item4 {
+  grid-area: right;
+  background-color: #7c87ee; /* Pink */
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: #466ff3;
+}
